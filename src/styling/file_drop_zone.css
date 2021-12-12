@@ -1,0 +1,12 @@
+#file_drop_parent{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: ". file_area ."
+                         ". file_area .";
+}
+.file_drop_zone {
+    grid-column: file_area-start file_area-end;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
